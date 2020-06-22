@@ -121,8 +121,8 @@ if (state.withKey) {
 const withKeyCheck = document.querySelector('#withKey')
 withKeyCheck.addEventListener('change', (e) => {
     removeKeysHandler()
+    state.withKey = e.target.checked
     if (e.target.checked) {
-        state.withKey = true
         addKeysHandler()
     }
 })
